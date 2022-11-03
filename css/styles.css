@@ -34,6 +34,8 @@ ul {
 }
 
 button {
+  font-weight: 700;
+
   cursor: pointer;
 }
 
@@ -144,14 +146,14 @@ section.features {
 .main-menu {
   display: flex;
   margin-left: 93px;
-  
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
-  }
+}
 
 .main-menu li:not(:last-child) {
   margin-right: 50px;
@@ -166,14 +168,14 @@ section.features {
 .contacts-in-header {
   display: flex;
   margin-left: auto;
-  
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
-  }
+}
 
 .contacts-in-header li:not(:last-child) {
   margin-right: 50px;
@@ -219,7 +221,7 @@ header {
 
 .hero-heading {
   margin-bottom: 30px;
-  
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -227,12 +229,12 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  }
+}
 
 /* Button Order service */
 
 .order-button {
-padding: 10px 32px;
+  padding: 10px 32px;
 
   font-family: inherit;
   font-style: normal;
@@ -244,7 +246,7 @@ padding: 10px 32px;
   box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
   border-radius: 4px;
   border: 0;
-  }
+}
 
 /* Feature section */
 
@@ -254,7 +256,7 @@ padding: 10px 32px;
 
 .features-list li {
   margin-right: 30px;
-    width: 270px;
+  width: 270px;
 }
 
 .features-list li:last-child {
@@ -270,7 +272,6 @@ padding: 10px 32px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-color);
-  
 }
 
 .feature-description {
@@ -308,6 +309,7 @@ padding: 10px 32px;
 
   background-color: var(--white-color);
   box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-card:last-child {
@@ -328,7 +330,7 @@ padding: 10px 32px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  }
+}
 
 .team-member-position {
   font-size: 16px;
@@ -350,9 +352,9 @@ padding: 10px 32px;
 
 .filter-button {
   display: block;
-    padding: 6px 22px;
-  
-    font-family: inherit;
+  padding: 6px 22px;
+
+  font-family: inherit;
   font-style: normal;
   font-size: 16px;
   line-height: 1.875;
@@ -390,10 +392,9 @@ padding: 10px 32px;
 }
 
 .portfolio-card {
-   margin: 15px;
+  margin: 15px;
 
   background-color: var(--white-color);
- 
 }
 
 .project-name-and-type {
@@ -412,7 +413,7 @@ padding: 10px 32px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-color);
-  }
+}
 
 .portfolio-card-project-type {
   font-size: 16px;
@@ -424,10 +425,10 @@ padding: 10px 32px;
 /* !!! FOOTER !!! */
 
 .footer {
-padding: 60px 0;
+  padding: 60px 0;
 
   background-color: var(--background-hero-and-footer);
-  }
+}
 
 .footer .logo {
   margin-bottom: 20px;
