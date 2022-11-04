@@ -186,6 +186,15 @@ section.features {
   color: var(--main-color);
 }
 
+.email::before {
+content: '';
+width: 16px;
+height: 12px;
+display: inline-block;
+background-image: url(../);
+}
+
+
 /* Paddings for all anchors in header except logo */
 
 header a:not(.logo) {
