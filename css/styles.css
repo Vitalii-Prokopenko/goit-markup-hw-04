@@ -169,7 +169,7 @@ section.features {
 .contacts-in-header {
   display: flex;
   margin-left: auto;
-
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -178,21 +178,42 @@ section.features {
   list-style: none;
 }
 
+
+
 .contacts-in-header li:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts-in-header a {
   color: var(--main-color);
+  
 }
+
+.email,
+.phone {
+display: inline-flex;
+  align-items: center;
+  }
 
 .email::before {
 content: '';
 width: 16px;
 height: 12px;
-display: inline-block;
-background-image: url(../);
+margin-right: 10px;
+background-image: url(../images/icons-contacts/envelope.svg);
+background-size: contain;
 }
+
+.phone::before {
+content: '';
+width: 10px;
+height: 16px;
+margin-right: 10px;
+background-image: url(../images/icons-contacts/smartphone.svg);
+background-size: contain;
+
+}
+
 
 
 /* Paddings for all anchors in header except logo */
@@ -275,13 +296,28 @@ header {
   display: flex;
 }
 
-.features-list li {
+.features-list-item {
   margin-right: 30px;
   width: 270px;
 }
 
-.features-list li:last-child {
+.features-list-item:last-child {
   margin-right: 0;
+}
+
+.features-list-item::before {
+  content: '';
+  display: block;
+  height: 70px;
+ 
+   background-color: yellow;
+  background-image: url(../images/icons-features/antenna.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+
 }
 
 .feature-headings {
@@ -300,6 +336,9 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.
+
 
 /* What do we do section */
 
