@@ -10,7 +10,7 @@
   --black-color: #000000;
   --interactive-contacts-in-footer-color: rgba(255, 255, 255, 0.6);
   --background-footer: #2f303a;
-  --background-hero: #C4C4C4;
+  --background-hero: #c4c4c4;
   --background-color-second: #f5f4fa;
 }
 
@@ -169,7 +169,7 @@ section.features {
 .contacts-in-header {
   display: flex;
   margin-left: auto;
-  
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -178,15 +178,12 @@ section.features {
   list-style: none;
 }
 
-
-
 .contacts-in-header li:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts-in-header a {
   color: var(--main-color);
-  
 }
 
 /* .email,
@@ -213,8 +210,6 @@ background-image: url(../images/icons-contacts/smartphone.svg);
 background-size: contain;
 
 } */
-
-
 
 /* Paddings for all anchors in header except logo */
 
@@ -252,7 +247,7 @@ header {
 
   height: 600px;
   max-width: 1600px;
-  
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero-img.jpg);
   background-size: cover;
@@ -305,22 +300,6 @@ header {
   margin-right: 0;
 }
 
-
-/* .features-list-item::before {
-  content: '';
-  display: block;
-  height: 70px;
- 
-   background-color: yellow;
-  background-image: url(../images/icons-features/antenna.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-
-
-} */
-
 .feature-headings {
   margin-bottom: 10px;
 
@@ -339,11 +318,16 @@ header {
 }
 
 .features-icon-div {
-  
+  height: 120px;
+  width: 100%;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
-
-
+.feature-icon {
+  /* background-position: center; */
+}
 
 /* What do we do section */
 
@@ -398,12 +382,38 @@ header {
 }
 
 .team-member-position {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
+.team-member-social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.team-member-social-links li {
+margin-right: 10px;
+}
+
+.team-member-social-links li:last-child {
+margin-right: 0px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: green;
+  
+}
+
+
+
 
 /* !!! PORTFOLIO PAGE !!! */
 
