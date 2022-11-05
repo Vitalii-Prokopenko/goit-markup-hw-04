@@ -189,7 +189,7 @@ section.features {
   
 }
 
-.email,
+/* .email,
 .phone {
 display: inline-flex;
   align-items: center;
@@ -212,7 +212,7 @@ margin-right: 10px;
 background-image: url(../images/icons-contacts/smartphone.svg);
 background-size: contain;
 
-}
+} */
 
 
 
@@ -305,7 +305,7 @@ header {
   margin-right: 0;
 }
 
-.features-list-item::before {
+/* .features-list-item::before {
   content: '';
   display: block;
   height: 70px;
@@ -318,7 +318,7 @@ header {
 
 
 
-}
+} */
 
 .feature-headings {
   margin-bottom: 10px;
@@ -336,8 +336,6 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.
 
 
 /* What do we do section */
