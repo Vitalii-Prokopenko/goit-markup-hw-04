@@ -305,6 +305,7 @@ header {
   margin-right: 0;
 }
 
+
 /* .features-list-item::before {
   content: '';
   display: block;
@@ -336,6 +337,12 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.features-icon-div {
+  
+}
+
+
 
 
 /* What do we do section */
