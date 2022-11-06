@@ -13,6 +13,8 @@
   --background-hero: #c4c4c4;
   --background-color-second: #f5f4fa;
   --background-color-clients: #f5f5f5;
+  --background-color-social-link: #afb1b8;
+  --portfolio-card-border-color: #eeeeee;
 }
 
 /* Global styles reset */
@@ -138,12 +140,12 @@ section.features {
   display: flex;
 }
 
+/* Main menu */
+
 .logo-and-menu-in-header {
   display: flex;
   align-items: center;
 }
-
-/* Main menu */
 
 .main-menu {
   display: flex;
@@ -183,47 +185,21 @@ section.features {
   margin-right: 50px;
 }
 
-.contacts-in-header a {
-  color: var(--main-color);
-}
-
-.email-contact,
-.phone-contact {
+.contact-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: var(--main-color);
 }
+
+/* Color of hovered / focused icons */
 
 .icon-contact {
-  fill: var(--main-color);
   margin-right: 10px;
+
+  fill: currentColor;
 }
-
-
-/* .email,
-.phone {
-display: inline-flex;
-  align-items: center;
-  }
-
-.email::before {
-content: '';
-width: 16px;
-height: 12px;
-margin-right: 10px;
-background-image: url(../images/icons-contacts/envelope.svg);
-background-size: contain;
-}
-
-.phone::before {
-content: '';
-width: 10px;
-height: 16px;
-margin-right: 10px;
-background-image: url(../images/icons-contacts/smartphone.svg);
-background-size: contain;
-
-} */
 
 /* Paddings for all anchors in header except logo */
 
@@ -240,23 +216,7 @@ header a:not(.logo) {
 .contacts-in-header a:hover,
 .contacts-in-header a:focus {
   color: var(--accent-color);
-  /* fill: currentColor; */
-  }
-
-/* .contacts-in-header a:hover,
-.contacts-in-header a:focus {
-    fill: currentColor;
-} */
-
-.contacts-in-header svg:hover,
-.contacts-in-header svg:focus {
-    fill: currentColor;
 }
-
-/* .icon-contact-in-header:hover,
-.icon-contact-in-header:focus {
-  fill: currentColor;
-} */
 
 /* Line border */
 
@@ -348,19 +308,16 @@ header {
 }
 
 .features-icon-div {
-  height: 120px;
-  width: 100%;
-  background-color: #f5f4fa;
-  border-radius: 4px;
   margin-bottom: 30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  height: 120px;
+  width: 100%;
 
-.feature-icon {
-  /* background-position: center; */
-  /* fill: #afb1b8; */
+  background-color: var(--background-color-second);
+  border-radius: 4px;
 }
 
 /* What do we do section */
@@ -439,20 +396,20 @@ header {
 }
 
 .social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  /* background-color: green; */
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: var(--background-color-social-link);
 }
 
 .social-link:hover,
 .social-link:focus {
   fill: var(--white-color);
-background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 /* Clients */
@@ -471,29 +428,27 @@ background-color: var(--accent-color);
 }
 
 .client-box {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   padding: 16px 32px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--background-color-social-link);
+  color: var(--background-color-social-link);
+  border-radius: 4px;
 }
 
 .client-box:hover,
 .client-box:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
-
 
 .client-icon {
-  fill: #afb1b8;
-}
-
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* !!! PORTFOLIO PAGE !!! */
@@ -516,6 +471,7 @@ background-color: var(--accent-color);
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--second-color);
   background-color: var(--background-color-second);
   border: none;
@@ -542,9 +498,10 @@ background-color: var(--accent-color);
 /* Portfolio cards */
 
 .portfolio-cards {
+  margin: -15px;
+
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
 }
 
 .portfolio-card {
@@ -555,14 +512,14 @@ background-color: var(--accent-color);
 
 .portfolio-card-link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+}
 
 .project-name-and-type {
   padding: 20px 24px;
 
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid var(--portfolio-card-border-color);
+  border-right: 1px solid var(--portfolio-card-border-color);
+  border-bottom: 1px solid var(--portfolio-card-border-color);
 }
 
 .portfolio-card-heading {
@@ -572,6 +529,7 @@ background-color: var(--accent-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--second-color);
 }
 
@@ -579,6 +537,7 @@ background-color: var(--accent-color);
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+
   color: var(--main-color);
 }
 
@@ -597,22 +556,6 @@ background-color: var(--accent-color);
 
 .footer-block {
   margin-right: 70px;
-}
-
-/* .second-block {
-  margin-top: 72px;
-} */
-
-
-.social-links-heading-in-footer {
-  text-transform: uppercase;
-  text-align: justify;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 2.21;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
 }
 
 .footer .logo {
@@ -648,6 +591,19 @@ background-color: var(--accent-color);
   margin-bottom: 9px;
 }
 
+/* Studio social links */
+
+.social-links-heading-in-footer {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 2.21;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+}
 .studio-social-links {
   display: flex;
   justify-content: center;
@@ -669,4 +625,4 @@ background-color: var(--accent-color);
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--accent-color);
-  }
+}
