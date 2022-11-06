@@ -42,10 +42,20 @@
         <!-- email, telephone -->
         <ul class="contacts-in-header">
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com </a>
+            <a class="email-contact" href="mailto:info@devstudio.com">
+              <svg class="icon-contact" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="phone-contact" href="tel:+380961111111">
+              <svg class="icon-contact" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -86,7 +96,7 @@
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li  class="features-list-item">
+            <li class="features-list-item">
               <div class="features-icon-div">
                 <svg class="feature-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
@@ -97,7 +107,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li  class="features-list-item">
+            <li class="features-list-item">
               <div class="features-icon-div">
                 <svg class="feature-icon" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
@@ -162,6 +172,36 @@
               <div class="team-member">
                 <h3 class="team-member-name">Ігор Дем'яненко</h3>
                 <p class="team-member-position" lang="en">Product Designer</p>
+                <ul class="team-member-social-links">
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <!-- frontend developer Ольга Репіна -->
@@ -197,7 +237,7 @@
                       </svg>
                     </a>
                   </li>
-                 <li>
+                  <li>
                     <a href="#" class="social-link">
                       <svg width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
@@ -218,6 +258,36 @@
               <div class="team-member">
                 <h3 class="team-member-name">Микола Тарасов</h3>
                 <p class="team-member-position" lang="en">Marketing</p>
+                <ul class="team-member-social-links">
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <!-- ui-designer Михайло Єрмаков -->
@@ -231,7 +301,87 @@
               <div class="team-member">
                 <h3 class="team-member-name">Михайло Єрмаков</h3>
                 <p class="team-member-position" lang="en">UI Designer</p>
+                <ul class="team-member-social-links">
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Clients -->
+      <section class="clients">
+        <div class="container">
+          <h2 class="visually-observed">Постійні клієнти</h2>
+          <ul class="clients-list">
+            <li>
+              <a class="client-box" href="#">
+                <svg class="client-icon" width="41" height="46.7">
+                  <use href="./images/symbol-defs.svg#icon-client1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="client-box" href="">
+                <svg class="client-icon" width="40" height="52">
+                  <use href="./images/symbol-defs.svg#icon-client2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="client-box" href="">
+                <svg class="client-icon" width="43.46" height="41.18">
+                  <use href="./images/symbol-defs.svg#icon-client3"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="client-box" href="">
+                <svg class="client-icon" width="84.44" height="40.62">
+                  <use href="./images/symbol-defs.svg#icon-client4"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="client-box" href="">
+                <svg class="client-icon" width="62.54" height="45.43">
+                  <use href="./images/symbol-defs.svg#icon-client5"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="client-box" href="">
+                <svg class="client-icon" width="93.7" height="43.93">
+                  <use href="./images/symbol-defs.svg#icon-client6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -240,26 +390,61 @@
     <!-- Address, contacts -->
     <footer class="footer">
       <div class="container">
-        <!-- Logo -->
-        <a href="/" lang="en" class="logo"
-          >Web<span class="colored-part-of-logo-in-footer">Studio</span></a
-        >
-        <address>
-          <ul class="contacts-in-footer">
+        <div class="footer-block">
+          <!-- Logo -->
+          <a href="/" lang="en" class="logo"
+            >Web<span class="colored-part-of-logo-in-footer">Studio</span></a
+          >
+          <address>
+            <ul class="contacts-in-footer">
+              <li>
+                <!-- Postal address not interactive contact -->
+                <p class="postal-address">м. Київ, пр-т Лесі Українки, 26</p>
+              </li>
+              <li>
+                <!-- Email interactive contact -->
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <!-- Phone interactive contact -->
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-block second-block">
+          <p class="social-links-heading-in-footer">приєднуйтесь</p>
+          <ul class="studio-social-links">
             <li>
-              <!-- Postal address not interactive contact -->
-              <p class="postal-address">м. Київ, пр-т Лесі Українки, 26</p>
+              <a href="#" class="social-link">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <!-- Email interactive contact -->
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a href="#" class="social-link">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <!-- Phone interactive contact -->
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a href="#" class="social-link">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
