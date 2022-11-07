@@ -428,8 +428,6 @@ header {
 }
 
 .client-box {
-  padding: 16px 32px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,6 +550,7 @@ header {
 .footer .container {
   display: flex;
   justify-content: left;
+  align-items: baseline;
 }
 
 .footer-block {
@@ -599,7 +598,7 @@ header {
   text-transform: uppercase;
   text-align: justify;
   font-size: 14px;
-  line-height: 2.21;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 
   color: var(--white-color);
